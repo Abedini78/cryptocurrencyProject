@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Zen+Antique&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="../css/currentPrice.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div class="loader">
+    <img src="../pic/loading/loading.gif" alt="" srcset="">
+  </div>
+  <span class="mouse_pointer"></span>
+      <div class="container_fluid  header">
+          <div class="container_fluid top_header">
+             <div class="col-xs-6 col-sm-6 col-xl-8 col-lg-8 col-md-6 top_header_right">
+                  <ul class="ul_top_header_right">
+                       
+                        <a href="#"><li>راهنمای استفاده</li></a>
+                        <a href="#"><li>سوالی دارید<i class="fa fa-question"></i></li></a>
+                        <a href="#"><li> معرفی به دوستان <i class="fa fa-comments"></i></li></a>
+                        <a href="#"><li>قیمت لحظه ایی رمزارزها
+                            <i class="fa fa-dollar"></i>
+                        </li>   
+                        </a>
+                        <a href="#"><li >ورود <i class="fa fa-reply"></i></li>   
+                        </a>
+                         <a href="login.html"><li>ثبت نام <i class="fa fa-edit"></i></li>   
+                          </a>
+                        
+                  </ul>
+                  <div class="container_fluid top_header_right_sm">
+                         <i class="fa fa-bars icon_menobar"></i>
+                        
+                         <a href="#" class="a_register">ثبت نام <i class="fa fa-edit"></i></a>
+
+
+                  </div>
+                   
+                   
+             </div>
+             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-6 col-sm-6 top_header_left">
+                <h1 class="logo_h1">DigiMoney</h1>
+                <i class="fa fa-toggle-off icon_toggle"></i>       
+                      
+                         
+            </div>
+
+          </div>
+          <div class="row container_fluid">
+            <div class="menobar_sm col-xs-7 col-sm-8 col-md-9">
+                   <ul class="ul_menobar_sm">
+                    <a href="#"><li>ورود <i class="fa fa-reply icon_menobar_sm"></i></li></a>
+                    <a href="#"><li>ثبت نام <i class="fa fa-edit icon_menobar_sm"></i></li></a>
+                    <a href="#"><li>قیمت لحظه ایی رمزارزها <i class="fa fa-dollar icon_menobar_sm"></i></li></a>
+                       <a href="#"><li>راهنمای استفاده </li></a>
+                       <a href="#"><li> سوالی دارید <i class="fa fa-question icon_menobar_sm"></i></li></a>
+                       <a href="#"><li>معرفی به دوستان</li></a>
+                      
+
+                   </ul>
+            </div>  
+           </div>
+      </div>
+      <div class="fillter">
+      <div class="rsi">
+        <p>شاخص قدرت نسبی(rsi 14):</p>
+      
+        <input type="range" value="0" max="100" min="0" class="Inputrange range_rsi">
+        <span class="value_range_rsi">0</span>
+      
+        <select name="" class="select select_rsi">
+          <option value="بالا">بالا</option>
+          <option value="پایین">پایین</option>
+        </select>
+    </div>
+    <div class="cci">
+      <p>شاخص کانال کالا(cci 14):</p>
+   
+      <input type="range" value="0" max="100" min="-100" class="Inputrange range_cci">
+      <span class="value_range_cci">0</span>
+        <select name="" class="select select_cci">
+          <option value="بالا">بالا</option>
+          <option value="پایین">پایین</option>
+        </select>
+        
+      
+    
+  </div>
+        <input class="btn_filter" type="button" name="" id="button_filter" value="اعمال فیلتر">
+      </div> 
+    <span class="filltering">فیلتر<svg xmlns="http://www.w3.org/2000/svg" class="svg_filter" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+      </svg></span>
+
+    <div class="caution_offline">
+        <div>
+            
+            <i class="f	fa fa-close delete_caution" ></i>
+        </div>
+      <div>
+          <p>به اینترنت دسترسی ندارید لطفا دستگاه خود را چک کنید</p>
+        <i class="fa fa-warning"></i>
+      </div>
+    </div>
+      <div class="container_fluid">
+        <div class="table container_fluid">
+             <table class="container_fluid" class="table" id="table_">
+                <tr>
+                    <th class="th">نام</th>
+                   <th class="th">قیمت لحظه ایی</th>
+                   <th class="th">  میزان افزایش/کاهش لحظه ایی</th>
+                   <th class=" price_1hh th">تغییرات در یک ساعت</th>
+                   <th class="chart th">تغییر 24 ساعت</th>
+                   <th class="vol th">تغییر حجم معاملات در 24 ساعت</th>
+                   <th class="market_camp th">عرضه کل</th>
+                   <th class="th">خرید و فروش</th>
+                  
+                </tr>
+                  
+
+                    </table>
+
+                    </div>
+                    </div>
+     
+      <script src="../js/currentPrice.js"></script>
+      </body>

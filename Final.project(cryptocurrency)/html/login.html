@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="loader">
+        <img src="../pic/loading/loading.gif" alt="" srcset="">
+      </div>
+      <span class="mouse_pointer"></span>
+    <div class="container_fluid  header">
+        <div class="container_fluid top_header">
+           <div class="col-xs-6 col-sm-6 col-xl-9 col-lg-9 col-md-6 top_header_right">
+                <ul class="ul_top_header_right">
+                     
+                      <a href="#"><li>راهنمای استفاده</li></a>
+                      <a href="#"><li>سوالی دارید<i class="fa fa-question"></i></li></a>
+                      <a href="#"><li> معرفی به دوستان <i class="fa fa-comments"></i></li></a>
+                      <a href="currentPrice.html"><li>قیمت لحظه ایی رمزارزها
+                          <i class="fa fa-dollar"></i>
+                      </li>   
+                      </a>
+                      <a href="#"><li >ورود <i class="fa fa-reply"></i></li>   
+                      </a>
+                       <a href="login.html"><li>ثبت نام <i class="fa fa-edit"></i></li>   
+                        </a>
+                      
+                </ul>
+                <div class="container_fluid top_header_right_sm">
+                       <i class="fa fa-bars icon_menobar"></i>
+                      
+                       <a href="#" class="a_register">ثبت نام <i class="fa fa-edit"></i></a>
+
+
+                </div>
+                 
+                 
+           </div>
+           <div class="col-xl-3 col-lg-3 col-md-6 col-xs-6 col-sm-6 top_header_left">
+              <h1 class="logo_h1">DigiMoney</h1>
+              <i class="fa fa-toggle-off icon_toggle"></i>      
+                    
+                       
+          </div>
+
+        </div>
+        <div class="row container_fluid">
+            <div class="menobar_sm col-xs-7 col-sm-8 col-md-9">
+                   <ul class="ul_menobar_sm">
+                    <a href="#"><li>ورود <i class="fa fa-reply icon_menobar_sm"></i></li></a>
+                    <a href="#"><li>ثبت نام <i class="fa fa-edit icon_menobar_sm"></i></li></a>
+                    <a href="currentPrice.html"><li>قیمت لحظه ایی رمزارزها <i class="fa fa-dollar icon_menobar_sm"></i></li></a>
+                       <a href="#"><li>راهنمای استفاده </li></a>
+                       <a href="#"><li> سوالی دارید <i class="fa fa-question icon_menobar_sm"></i></li></a>
+                       <a href="#"><li>معرفی به دوستان</li></a>
+                      
+
+                   </ul>
+            </div>  
+           </div>
+
+            <div class="container">
+                <div class="container_fluid container_form">
+                    <div class="col-xs-11 col-sm-11 col-md-7 col-lg-5 col-xl-5">
+                            <div class="form">
+                                 <form class="form_submit" action="" onsubmit="validate()">
+                                     <h2>ثبت نام</h2>
+                                     <p>به دیجی مانی خوش امدید حساب خود را رایگان بسازید.</p>
+                                      <input type="email" name="" id="" placeholder="example@gmail.com" class="mail">
+                                      <h6>یمدنیذنتی</h6>
+                                     
+                                      <div class="container_input_icon">
+                                        <input type="password" class="inp_pass" name="" id="input_pass" placeholder="لطفا رمز خود را وارد کنید" >
+                                        <div class="toggel_pass">
+                                                  <i class="fa fa-eye-slash eye"></i> 
+                                        </div>
+                                      </div> 
+
+                                      
+                                      <div class="progress">
+
+                                      </div>
+                                      <h6 class="alert_pass">یمدنیذنتی</h6>
+                                     
+                                      <div class="container_input_icon">
+                                        <input type="password" name="" id="reapet_pass" placeholder="تکرار رمز عبور">
+                                       
+                                        <div class="toggel_repeat_pass">
+                                            <i class="fa fa-eye-slash eye"></i>   
+                                        </div>
+                                          </div>
+                                          <h6 class="alert_reapet_pass">یمدنیذنتی</h6>
+                                      <input type="number" name="" id="" placeholder="کد دعوت اختیاری">
+                                      <div class="code_cap">
+                                           <p id="code_cap_p">33554566</p>
+                                      </div>
+                                        <input type="number" name="" id="input_cap" placeholder="برای تشخیص ربات لطفا عدد 8 رقمی بالا را بنویسید">
+                                        <h6 class="alert_cap">یمدنیذنتی</h6>
+                                       <input type="submit" name="" id="" class="submit"  value="ثبت حساب کاربری">
+                                    </form>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="caution_submit">
+                <div>
+                    
+                    <i class="f	fa fa-close delete_caution" ></i>
+                </div>
+              <div>
+                 <p>اطلاعات به درستی وارد نشده </p>
+                <i class="fa fa-warning"></i>
+              </div>
+            </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
